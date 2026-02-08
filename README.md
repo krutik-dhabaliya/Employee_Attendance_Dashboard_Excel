@@ -123,6 +123,14 @@ These custom columns drive all KPIs shown in the dashboard.
 
 - Expected Payout =H2*24*$W$17
 
+- **Column Design Note** : To improve usability and transparency, all custom columns created using Excel formulas are highlighted in ORANGE color in the worksheet. This visual distinction helps users:
+
+			a)  Easily identify which fields contain formulas 
+			b) Avoid accidental manual editing
+			c) Understand that these columns are automatically calculated
+			d) Safely update only the raw input fields
+
+
 
 #### 4) Workflow Summary
 
@@ -194,6 +202,97 @@ This page focuses on individual employee performance with interactive filters.
    
 The two-page design ensures both strategic overview for management and detailed operational analysis for HR.
 
+## Results & Insights
 
+The Employee Attendance Dashboard provides clear visibility into workforce performance and payroll impact. Based on the processed data and dashboard metrics, the following key insights were observed:
 
+#### 1) Workforce Attendance Performance
+-   **Full-day attendance accounts for 88.26%** of total working hours, while **11.74%** corresponds to half-day records. 
 
+-   Certain employees show significantly higher attendance consistency, which is reflected in the employee ranking chart.
+
+#### 2) Payroll & Cost Analysis
+
+-   **Actual Payout:** $24,973.30
+-   **Expected Payout:** $20,628.40
+-   **Total Deduction:** $4,344.89
+
+The gap between actual and expected payout is mainly influenced by:
+
+-   Early check-outs
+-   Half-day attendance
+-   Missed punches
+-   Variations in working hours
+
+This comparison helps management understand payroll deviations and control labor costs.
+
+#### 3) Attendance Irregularities
+
+From the employee detail page:
+
+-   Instances of Early Check-Outs and Missed Punches were identified
+-   Extra hours worked by certain employees were recorded (e.g., 83:36 hours)
+-   Late check-ins were minimal due to the 5-minute grace rule
+
+These indicators help HR take corrective actions and improve discipline.
+
+#### 4) Operational Benefits
+
+The dashboard enabled:
+-   Quick identification of low attendance employees
+-   Transparent payroll calculation
+-   Reduction in manual reconciliation effort
+-   Data-driven decision making for HR and management
+
+## Limitations & Future Enhancements
+
+###  1. Limitations
+Although the dashboard provides automated attendance analysis, there are certain constraints:
+
+-   **Manual Data Dependency**  
+    The system relies on manually imported Excel attendance data and is not directly connected to biometric or HR systems.
+    
+-   **No Real-Time Integration**  
+    Attendance updates are reflected only after the data file is refreshed, not in real time.
+    
+-   **Fixed Hourly Rate**  
+    The payout calculation assumes a single hourly rate and does not support role-based or overtime rate variations.
+    
+-   **Assumption-Based Missed Punch Handling**  
+    In case of missed punch, the system allocates standard shift hours, which may not always reflect actual working time.
+    
+-   **Scalability**  
+    Excel performance may reduce with very large datasets or multi-year records.
+
+### **2. Future Enhancements**
+
+The dashboard can be improved with the following additions:
+
+-   **Integration with Biometric/HR System** for automatic data capture
+    
+-   **Role-Based Pay Structure** with overtime and weekend rates
+    
+-   **VBA Automation** to refresh data and generate monthly reports
+    
+-   **Email Alerts** for late check-in, early exit, and missed punch
+    
+-   **Power BI Migration** for large-scale and real-time analytics
+      
+These enhancements would make the system more robust and enterprise ready.
+
+## Conclusion
+
+The Employee Attendance Dashboard successfully transforms raw punch records into a structured and interactive analytical solution using Microsoft Excel. By automating the calculation of working hours, attendance status, and payroll estimation, the system reduces manual effort and minimizes errors commonly found in traditional attendance sheets.
+
+The dashboard provides both organizational and employee-level insights, enabling HR and management to monitor presence trends, identify irregular behaviors such as late check-ins, early check-outs, and missed punches, and compare **actual payout versus expected payout**. The inclusion of business rules such as the **5-minute grace period** and standardized handling of **missed punches** ensures fair and consistent payroll processing.
+
+Custom columns built through Excel formulas form the core of the model, while visual highlighting of these columns helps users clearly distinguish calculated fields from raw data. The two-page interactive design allows quick decision-making without the need for external BI tools.
+
+Overall, this project demonstrates how Excel can function as a powerful analytics platform for attendance management, providing:
+
+-   Accurate and automated hour computation
+-   Transparent payroll calculation
+-   Better workforce visibility
+-   Data-driven HR decision support
+
+With further enhancements such as system integration and automation, the dashboard can evolve into a complete enterprise attendance solution.
