@@ -125,10 +125,10 @@ These custom columns drive all KPIs shown in the dashboard.
 
 - **Column Design Note** : To improve usability and transparency, all custom columns created using Excel formulas are highlighted in ORANGE color in the worksheet. This visual distinction helps users:
 
-			a)  Easily identify which fields contain formulas 
-			b) Avoid accidental manual editing
-			c) Understand that these columns are automatically calculated
-			d) Safely update only the raw input fields
+	a)  Easily identify which fields contain formulas 
+	b) Avoid accidental manual editing
+	c) Understand that these columns are automatically calculated
+	d) Safely update only the raw input fields
 
 
 
