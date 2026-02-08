@@ -113,15 +113,15 @@ These custom columns drive all KPIs shown in the dashboard.
 
 #### 3) Calculations & Formula Logic
 
-- Working Hours =IFS(AND(ISBLANK(I2)=FALSE,ISBLANK(J2)=FALSE),J2-I2,AND(ISBLANK(I2)=TRUE,ISBLANK(J2)=TRUE),"",AND(ISBLANK(I2)=FALSE,ISBLANK(J2)=TRUE),I2+H2)
+	Working Hours = IFS(AND(ISBLANK(I2)=FALSE,ISBLANK(J2)=FALSE),J2-I2,AND(ISBLANK(I2)=TRUE,ISBLANK(J2)=TRUE),"",AND(ISBLANK(I2)=FALSE,ISBLANK(J2)=TRUE),I2+H2)
 
-- Extra time worked =IF(AND(ISNUMBER([@[Working_Hours]])=TRUE,[@[Working_Hours]]>[@[Days_Hours]]),[@[Working_Hours]]-[@[Days_Hours]],"")
+	Extra time worked = IF(AND(ISNUMBER([@[Working_Hours]])=TRUE,[@[Working_Hours]]>[@[Days_Hours]]),[@[Working_Hours]]-[@[Days_Hours]],"")
 
-- Punch =IF(AND(ISNUMBER([@[Clock In]])=TRUE,ISNUMBER([@[Clock Out]])=FALSE),"Missed Punch",IF(AND(ISNUMBER([@[Clock In]])=FALSE,ISNUMBER([@[Clock Out]])=FALSE),"",IF([@[Clock In]]>=[@[On duty]]+TIME(0,5,0),"Late Check-In",IF([@[Clock Out]]<=[@[Off duty]]-TIME(0,5,0),"Early Check-Out",""))))
+	Punch = IF(AND(ISNUMBER([@[Clock In]])=TRUE,ISNUMBER([@[Clock Out]])=FALSE),"Missed Punch",IF(AND(ISNUMBER([@[Clock In]])=FALSE,ISNUMBER([@[Clock Out]])=FALSE),"",IF([@[Clock In]]>=[@[On duty]]+TIME(0,5,0),"Late Check-In",IF([@[Clock Out]]<=[@[Off duty]]-TIME(0,5,0),"Early Check-Out",""))))
 
-- Payout =IFS(ISNUMBER(K2)=TRUE,K2*$W$17*24,ISNUMBER(K2)=FALSE,0*$W$17)
+	Payout = IFS(ISNUMBER(K2)=TRUE,K2*$W$17*24,ISNUMBER(K2)=FALSE,0*$W$17)
 
-- Expected Payout =H2*24*$W$17
+	Expected Payout = H2*24*$W$17
 
 - **Column Design Note** : To improve usability and transparency, all custom columns created using Excel formulas are highlighted in ORANGE color in the worksheet. This visual distinction helps users:
 
