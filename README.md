@@ -140,7 +140,7 @@ These custom columns drive all KPIs shown in the dashboard.
     
 3.  Generate custom calculated columns
     
-4.  Step by step calculations using formulas
+4.  Step-by-step calculations implemented using Excel formulas
     
 5.  Design two dashboard pages
     
@@ -171,7 +171,7 @@ If an employee checks in but forgets to check out, the record is marked as Misse
 -   The defined shift duration (e.g., 8 hours) is added to the Clock In time to generate an estimated Clock Out time.
 -   Payment for that day is calculated based on this allotted shift duration.
 
-## Dashboard Overview
+## Dashboard Summary
 
 The Employee Attendance Dashboard consists of **two interactive pages** designed to provide both organizational-level insights and employee-level drill-down analysis. All visuals are dynamically linked to the processed attendance dataset and update automatically based on slicer selections.
 
