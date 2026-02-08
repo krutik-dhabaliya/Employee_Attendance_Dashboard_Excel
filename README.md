@@ -202,6 +202,15 @@ This page focuses on individual employee performance with interactive filters.
    
 The two-page design ensures both strategic overview for management and detailed operational analysis for HR.
 
+#### User Interaction Controls
+
+The dashboard uses interactive controls created through the Developer Tab in Excel, including **Radio Buttons** and **Combo Boxes**, to enable user-friendly navigation and filtering. These form controls are linked to cells and pivot tables, allowing users to:
+
+-   Switch between different views and metrics
+-   Select employees and months dynamically
+-   Update charts and KPIs without manual editing
+-   Provide a simple interface for non-technical users
+
 ## Results & Insights
 
 The Employee Attendance Dashboard provides clear visibility into workforce performance and payroll impact. Based on the processed data and dashboard metrics, the following key insights were observed:
